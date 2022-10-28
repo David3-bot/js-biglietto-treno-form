@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,10 +11,39 @@
 
 <body>
     <div class="container m-auto">
-        <h2 class="text-center" id="prezzo">
-        </h2>
+        <h1>Biglietto Treno</h1>
+
+        <form id="form">
+            <div class="mb-3">
+                <label for="userName" class="form-label">Nome e cognome</label>
+                <input id="userName" type="text" class="form-control">
+            </div>
+
+            <div class="mb-3">
+                <label for="numKil" class="form-label">Inserisci il numero di kilometri</label>
+                <input id="kmInput" type="number" class="form-control">
+            </div>
+
+            <div>
+            <label for="">Inserisci la tua età</label>
+                <div class="p-2">
+                    <select name="" size="3" class="overflow-hidden" id="eta">
+                        <option id="ageInputMagg">Maggiorenne</option>
+                        <option id="ageInputMinor">Minorenne</option>
+                        <option id="ageInputOver">Over 60</option>
+                    </select>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Calcola</button>
+            <button class="btn btn-danger">Reset</button>
+        </form>
+
     </div>
-    <script src="../js-biglietto-treno/javas/main.js"></script>
+
+
+
+    <script src="../js-biglietto-treno-form/js/main.js"></script>
 </body>
 
 </html>
